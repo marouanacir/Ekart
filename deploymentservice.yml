@@ -15,7 +15,7 @@ spec:
       containers:
         - name: ekart
           image: marouanacir/projetfinannee:${BUILD_ID} # Image that will be used to containers in the cluster
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always # IfNotPresent
           ports:
             - containerPort: 8070 # The port that the container is running on in the cluster
 
